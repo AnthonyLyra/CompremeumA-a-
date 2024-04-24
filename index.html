@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <h1>Motivos para minha mãe me comprar um AÇAÍ</h1>
+    </nav>
+    <div class="ready-text">
+        <p>
+            <b>LEIA OS MOTIVOS ABAIXO</b>
+        </p>
+    </div>
+    <div class="primeiro">
+        <img src="açai.png">
+        <h1>1. Sou seu filho querido (:</h1>
+     
+        <h1>2. Eu te amo muito muito (:</h1>
+     
+        <h1>3. A senhora me ama (:</h1>
+    
+        <h1>4. É baratinho e deixa seu filho felizinho (:</h1>
+       
+        <h1>5. A senhora não tem escolha (:</h1>
+        
+    </div>
+    <div id="conteudo">
+        <h2>Vai me pagar o Açaí?</h2>
+        <div>
+            <button class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+        </div>
+    </div>
+<script>
+    function sim() {
+    alert("Obrigado por me pagar um Açaí! :)");
+    // redireciona para um URL após clicar no SIM
+    location.href = "https://https://www.youtube.com/watch?v=z-JRdRXiNv4";
+}
+function desvia(btn) {
+    // btn declarado na função
+    btn.style.position = 'absolute';
+    btn.style.bottom = geraPosicao(10, 90);
+    btn.style.left = geraPosicao(10, 90);
+    console.log('opa, desviei...');
+}
+function geraPosicao(min, max) {
+    return (Math.random() * (max - min) + min) + "%";
+}
+</script>
+</body>
+
+</html>
